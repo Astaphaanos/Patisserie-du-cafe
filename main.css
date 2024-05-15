@@ -14,3 +14,27 @@ Color:
 #29222A
 #362629
 */
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+#cabecalho {
+    background-color: #362629;
+    color: #D3BCAF;
+}
+
+#cabecalho h1 {
+    color: #D3BCAF;
+    font-family: "Dancing Script", cursive;
+}
+
+#navegation li{
+    list-style: none;
+}
+
+#produtos h3, #cafes h2{
+    color: #362629;
+    font-family: "Dancing Script", cursive;
+}
+

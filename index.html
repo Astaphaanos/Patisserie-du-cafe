@@ -27,45 +27,44 @@
 <body>
     <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
         <div class="container">
-            <h1 class="navbar-brand m-0 section-title">Pâtisserie du Café</h1>
+            <h1 class="navbar-brand m-0 section-title fs-3 fw-bold">Pâtisserie du Café</h1>
 
             <nav class="navbar-collapse collapse justify-content-end" id="navegation">
-                <li class="nav-item fw-bold">
+                <li class="nav-item fw-bold m-4">
                     <a href="#" class="nav-link">Home</a>
                 </li>
 
-                <li class="nav-item fw-bold">
+                <li class="nav-item fw-bold m-4">
                     <a href="#" class="nav-link">Cafés</a>
                 </li>
 
-                <li class="nav-item fw-bold">
+                <li class="nav-item fw-bold m-4">
                     <a href="#" class="nav-link">Produtos</a>
                 </li>
 
-                <li class="nav-item fw-bold">
+                <li class="nav-item fw-bold m-4">
                     <a href="#" class="nav-link">Contatos</a>
                 </li>
             </nav>
         </div>
     </header>
 
-    <main>
-        
+    <main>     
         <div data-bs-spy="scroll" data-bs-target="#cabecalho">
             <!--data-bs-smooth-scroll="true"-->
             <section id="slides">
                 <div class="carousel slide" data-bs-ride="carousel" id="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active" data-bs-interval="3000">
-                            <img src="images/Local/Cofffee.jpg" alt="Graõs de Café">
+                            <img class="w-100" src="images/Local/coffee.jpg" alt="Graõs de Café">
                         </div>
 
                         <div class="carousel-item" data-bs-interval="3000">
-                            <img src="images/Local/fachada.jpg" alt="Fachada">
+                            <img class="w-100" src="images/Local/fachada.jpg" alt="Fachada">
                         </div>
 
                         <div class="carousel-item" data-bs-interval="3000">
-                            <img src="images/Local/interno da loja.jpg" alt="Interno da Loja">
+                            <img class="w-100" src="images/Local/interno da loja.jpg" alt="Interno da Loja">
                         </div>
                     </div>
 
@@ -88,8 +87,293 @@
                     </div>
                 </div>
             </section>
-
         </div>
+
+            <!--Produtos-->
+        <section id="produtos" class="pt-5">
+            <div class="container">
+                <div class="row">
+                    <h3 class="section-title text-center fs-1 mb-3">Grãos</h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="images/Marcas de café/coffee 3.jpg" alt="Battlecreek Coffee" class="d-block w-100 rounded mb-2 p-3">
+                    <h3 class="section-title m-3">Battlecreek Coffee</h3>
+                    <p class="m-3">O Battlecreek Coffee é uma empresa de café conhecida por sua abordagem artesanal na torrefação e preparo de café. Eles se destacam pela qualidade dos grãos selecionados e pela ênfase na sustentabilidade e comércio justo. Sua variedade de blends e single origins atrai entusiastas de café em busca de sabores distintos e de alta qualidade.</p>
+                </div>
+
+                <div class="col-md-4">
+                    <img src="images/Marcas de café/coffee 1.jpg" alt="Madalyn Coffee" class="d-block w-100 rounded mb-2 p-3">
+                    <h3 class="section-title">Madalyn Coffee</h3>
+                    <p>O Madalyn Coffee é uma marca de café especializada, famosa por suas torrefações artesanais e compromisso com a qualidade dos grãos. Eles oferecem uma variedade de blends e single origins, com ênfase em sabores distintos e autênticos. Sua abordagem sustentável e foco no comércio justo também são características marcantes da marca.</p>
+                </div>
+
+                <div class="col-md-4">
+                    <img src="images/Marcas de café/coffee 2.jpg" alt="Buddha Beans Coffee" class="d-block w-100 rounded mb-2 p-3">
+                    <h3 class="section-title">Buddha Beans Coffee</h3>
+                    <p>O Buddha Beans Coffee é uma empresa de café que se destaca pela sua abordagem única e espiritual. Eles combinam a arte da torrefação artesanal com a filosofia budista, buscando criar uma experiência de café que alimente não apenas o corpo, mas também a mente e o espírito. Seus produtos são conhecidos por sua qualidade premium e por promover uma sensação de bem-estar.</p>
+                </div>
+            </div>
+        </section>
+
+        <!--Cardápio-->
+        <section id="coffee" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center mb-5">Cafés</h2>
+                </div>      
+                
+                <!--Tabela-->
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column nav-cardapio">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#cafes" class=" fw-bold text-start nav-link active">Cafés</button>
+
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#ice-cafe" class="fw-bold text-start nav-link">Café Gelado</button>
+
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#drinks" class="fw-bold text-start nav-link">Drinks</button>
+
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#salgados" class="fw-bold text-start nav-link">Salgados</button>
+                        </nav>
+                    </aside>
+
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="cafes">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/coffee/café americano.jpg" alt="Café Americano">
+                                        <h5 class="fw-bold mt-2">Café Americano</h5>
+                                        <p>Expresso suavizado com água quente <br><strong>9,50</strong>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/coffee/café com leite.jpg" alt="Café com leite">
+                                        <h5 class="fw-bold mt-2">Café com leite</h5>
+                                        <p>Expresso, leite vaporizado e espuma de leite <br><strong>10,50</strong>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/coffee/café natural.jpg" alt="Café Natural">
+                                        <h5 class="fw-bold mt-2">Café Natural</h5>
+                                        <p>Grãos naturais passado no coador de papel<br><strong>17,00</strong>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/coffee/café tradicional.jpg" alt="Café Tradicional">
+                                        <h5 class="fw-bold mt-2">Café Tradicional</h5>
+                                        <p>Sem açúcar e leite <br><strong>5,00</strong>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/coffee/baunilha latte.jpg" alt="Baunilha Latte">
+                                        <h5 class="fw-bold mt-2">Baunilha Latte</h5>
+                                        <p>Leite vaporizado, expresso e essência de baunilha <br><strong>7,50</strong>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/coffee/cappuccino de canela.jpg" alt="Cappuccino de Canela">
+                                        <h5 class="fw-bold mt-2">Cappuccino de Canela</h5>
+                                        <p>Expresso, canela e leite cremoso, com uma pitada de canela por cima  <br><strong>14,50</strong>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/coffee/cappuccino tradicional.jpg" alt="Cappuccino Tradicional">
+                                        <h5 class="fw-bold mt-2">Cappuccino Tradicional</h5>
+                                        <p>Expresso com leite cremoso<br><strong>10,50</strong>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Café Gelado-->
+                            <div class="tab-pane" id="ice-cafe">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/café gelado/café tradicional.jpg" alt="Café Tradicional Gelado">
+                                        <h5 class="fw-bold mt-2">Café Tradicional Gelado</h5>
+                                        <p>Sem açúcar e sem leite com gelo<br><strong>7,00</strong></p>
+                                    </div>
+    
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/café gelado/café latte gelado.jpg" alt="Café Latte Gelado">
+                                        <h5 class="fw-bold mt-2">Café Latte Gelado</h5>
+                                        <p>Expresso, leite frio, espuma de leite, café gelado e gelo<br><strong>13,50</strong></p>
+                                    </div>
+    
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/café gelado/caramelo macchiato.jpg" alt="Caramelo Macchiato">
+                                        <h5 class="fw-bold mt-2">Caramelo Macchiato</h5>
+                                        <p>Leite frio, baunilha, café gelado, cobertura de caramelo e gelo
+                                            <br><strong>10,50</strong></p>
+                                    </div>
+    
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/café gelado/baunilha latte.jpg" alt="Baunilha Latte">
+                                        <h5 class="fw-bold mt-2">Baunilha Latte</h5>
+                                        <p>Leite gelado, expresso e essência de baunilha com gelo<br><strong>9,50</strong></p>
+                                    </div>
+    
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/café gelado/doubleshot espresso ice.jpg" alt="Doubleshot Espresso Ice">
+                                        <h5 class="fw-bold mt-2">Doubleshot Espresso Ice</h5>
+                                        <p>Leite, gelo e café gelado<br><strong>15,50</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="drinks">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/drinks/banana.jpg" alt="Drink de Banana">
+                                        <h5 class="fw-bold mt-2">Drink de Banana</h5>
+                                        <p>Banana, melancia, pitaya, limonada<br><strong>16,00</strong></p>
+                                    </div>
+    
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/drinks/castanha.jpg" alt="Drink de Castanha">
+                                        <h5 class="fw-bold mt-2">Drink de Castanha</h5>
+                                        <p>Leite, banana, castanha de cajú e gelo <br><strong>17,50</strong></p>
+                                    </div>
+    
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/drinks/laranja.jpg" alt="Limonada com Laranja">
+                                        <h5 class="fw-bold mt-2">Limonada com laranja</h5>
+                                        <p>Limonada com laranja 
+                                            <br><strong>10,50</strong></p>
+                                    </div>
+    
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/drinks/morango.jpg" alt="Drink de Morango">
+                                        <h5 class="fw-bold mt-2">Drink de Morango</h5>
+                                        <p>Morango, pitayam frutas vermelhas e limão<br><strong>12,50</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!--Salgados-->
+                            <div class="tab-pane" id="salgados">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/Salgados/coxinha.jpg" alt="Coxinha de Frango">
+                                        <h5 class="fw-bold mt-2">Coxinha de Frango</h5>
+                                        <p>Recheio de frango com requeijão cremoso<br><strong>10,50</strong></p>
+                                    </div>
+    
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/Salgados/misto croque.jpg" alt="Misto Croque">
+                                        <h5 class="fw-bold mt-2">Misto Croque</h5>
+                                        <p>Presunto, queijo prato, parmessão e pão<br><strong>12,50</strong></p>
+                                    </div>
+    
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/Salgados/misto de peru.jpg" alt="Misto de Peru">
+                                        <h5 class="fw-bold mt-2">Misto de Peru</h5>
+                                        <p>Pão artesanal na chapa com peito de peru <br><strong>17,00</strong></p>
+                                    </div>
+    
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/Salgados/misto de presunto.jpg" alt="Misto de Presunto">
+                                        <h5 class="fw-bold mt-2">Misto de Presunto</h5>
+                                        <p>Pão artesanal com presunto e muçarela<br><strong>10,50</strong></p>
+                                    </div>
+    
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/Salgados/pão de queijo.jpg" alt="Pão de Queijo">
+                                        <h5 class="fw-bold mt-2">Pão de Queijo</h5>
+                                        <p>Recheio cremoso<br><strong>8,50</strong></p>
+                                    </div>
+    
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/Salgados/torrada.jpg" alt="Torrada">
+                                        <h5 class="fw-bold mt-2">Torrada</h5>
+                                        <p>Pão artesanal tostado com manteiga<br><strong>7,50</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Trabalhe Conosco-->
+        <section id="trabalhe-conosco" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Trabalhe Conosco</h2>
+                </div>
+
+                <!--Formulário-->
+                <div class="row">
+                    <div class="col-md-7 mb-5"></div>
+                    <form>
+                        <div class="mb-3">
+                            <label for="nome" class="form-label fw-bold">Nome Completo: </label>
+                            <input type="text" id="nome" class="form-control" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label fw-bold">E-mail: </label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="tel" class="form-label fw-bold">Telefone: </label>
+                            <input type="tel" id="tel" class="form-control" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="arquivo" class="form-label fw-bold">Currículo: </label>
+                            <input type="file" id="arquivo" class="form-control" required>
+                        </div>
+
+                        <button type="submit" class="btn fw-bold mb-4" >Enviar</button>
+                    </form>
+                </div>
+
+                <!--Redes Sociais-->
+                <div class="col-md-5">
+                    <div class="row">
+                        <h3 class="section-title fs-4">
+                            <i class="bi bi-hand-thumbs-up-fill"></i>
+                            Redes Sociais
+                        </h3>
+
+                        <!--Links-->
+                        <ul class="social-media">
+                            <li class="fs-5">
+                                <a href="#">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                            </li>
+
+                            <li class="fs-5">
+                                <a href="#">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                            </li>
+
+                            <li class="fs-5">
+                                <a href="#">
+                                    <i class="bi bi-tiktok"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <!--Script do Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
