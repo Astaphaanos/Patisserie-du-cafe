@@ -19,22 +19,80 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
-#cabecalho {
+.navbar {
     background-color: #362629;
+}
+
+.navbar h1 {
+    color: #D3BCAF;
+    font-family: "Dancing Script", cursive;
+}
+
+#cabecalho .nav .nav-link.active {
+    color: #D3BCAF;
+    background-color: #D9B2A0;
+}
+
+#cabecalho .nav .nav-link, .navbar-brand, .navbar-brand:hover, .nav-cardapio .nav-link.active:hover{
     color: #D3BCAF;
 }
 
-#cabecalho h1 {
-    color: #D3BCAF;
+.navbar-brand {
     font-family: "Dancing Script", cursive;
+}
+
+.navbar-toggler {
+    background-color: #D9B2A0;
 }
 
 #navegation li{
     list-style: none;
+    color: #D3BCAF;
 }
 
-#produtos h3, #cafes h2{
+.section-title {
     color: #362629;
     font-family: "Dancing Script", cursive;
 }
+
+#cardapio-cafe {
+    background-color: #D3BCAF;
+}
+
+.nav-cardapio .nav-link.active, #trabalhe-conosco button {
+    background-color: #362629;
+    color:  #D3BCAF;
+}
+
+.nav-cardapio button {
+    color:  #29222A;
+}
+
+.nav-cardapio .nav-link:hover {
+    background-color: #7d695f;
+}
+
+.social-media i{
+    color: #362629;
+}
+
+.social-media li {
+    list-style: none;
+    display: inline;
+}
+
+.social-media li a {
+    text-decoration: none;
+}
+
+.form-label {
+    color: #362629;
+}
+
+@media (max-width: 767px) {
+    .caurosel-item img {
+        height: 280px;
+    }
+}
+
 
