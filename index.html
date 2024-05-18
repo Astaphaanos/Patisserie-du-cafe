@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="main.css">
     <title>Pâtisserie du Café</title>
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar">
     <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
         <div class="container">
             <h1 class="navbar-brand m-0 section-title fs-3 fw-bold">Pâtisserie du Café</h1>
@@ -33,11 +33,13 @@
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegation"> 
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <!--Final do Botão hamburger para mobile-->
 
+            <!--Navegação (nav)-->
             <nav class="navbar-collapse collapse justify-content-end" id="menu-navegation">
                 <ul class="nav nav-pills d-block d-md-flex">
                     <li class="nav-item fw-bold">
-                        <a href="#produtos" class="nav-link">Grãos</a>
+                        <a href="#produtos" class="nav-link active">Grãos</a>
                     </li>
                     <li class="nav-item fw-bold">
                         <a href="#cardapio-cafe" class="nav-link">Cafés</a>
@@ -50,7 +52,7 @@
         </div>
     </header>
 
-    <main>     
+    <main><!--Carousel-->
         <div data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-smooth-scroll="true">
             <section id="slides">
                 <div class="carousel slide" data-bs-ride="carousel" id="carousel">
@@ -106,14 +108,14 @@
 
                 <div class="col-md-4">
                     <img src="images/Marcas de café/coffee 1.jpg" alt="Madalyn Coffee" class="d-block w-100 rounded mb-2 p-3">
-                    <h3 class="section-title">Madalyn Coffee</h3>
-                    <p>O Madalyn Coffee é uma marca de café especializada, famosa por suas torrefações artesanais e compromisso com a qualidade dos grãos. Eles oferecem uma variedade de blends e single origins, com ênfase em sabores distintos e autênticos. Sua abordagem sustentável e foco no comércio justo também são características marcantes da marca.</p>
+                    <h3 class="section-title m-3">Madalyn Coffee</h3>
+                    <p class="m-3">O Madalyn Coffee é uma marca de café especializada, famosa por suas torrefações artesanais e compromisso com a qualidade dos grãos. Eles oferecem uma variedade de blends e single origins, com ênfase em sabores distintos e autênticos. Sua abordagem sustentável e foco no comércio justo também são características marcantes da marca.</p>
                 </div>
 
                 <div class="col-md-4">
                     <img src="images/Marcas de café/coffee 2.jpg" alt="Buddha Beans Coffee" class="d-block w-100 rounded mb-2 p-3">
-                    <h3 class="section-title">Buddha Beans Coffee</h3>
-                    <p>O Buddha Beans Coffee é uma empresa de café que se destaca pela sua abordagem única e espiritual. Eles combinam a arte da torrefação artesanal com a filosofia budista, buscando criar uma experiência de café que alimente não apenas o corpo, mas também a mente e o espírito. Seus produtos são conhecidos por sua qualidade premium e por promover uma sensação de bem-estar.</p>
+                    <h3 class="section-title m-3">Buddha Beans Coffee</h3>
+                    <p class="m-3">O Buddha Beans Coffee é uma empresa de café que se destaca pela sua abordagem única e espiritual. Eles combinam a arte da torrefação artesanal com a filosofia budista, buscando criar uma experiência de café que alimente não apenas o corpo, mas também a mente e o espírito. Seus produtos são conhecidos por sua qualidade premium e por promover uma sensação de bem-estar.</p>
                 </div>
             </div>
         </section>
